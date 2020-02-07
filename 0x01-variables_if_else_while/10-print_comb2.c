@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-<<<<<<< HEAD
+
 int x;
 for (x = 0 ; x <= 99 ; x++)
 {
@@ -20,21 +20,4 @@ putchar(' ');
 }
 putchar('\n');
 return (0);
-=======
-	int x;
-
-	for (x = 0 ; x <= 99 ; x++)
-		{
-			putchar ((x / 10) + '0');
-			putchar ((x % 10) + '0');
-			if (x != 99)
-				{
-
-					putchar(',');
-					putchar(' ');
-				}
-		}
-	putchar('\n');
-	return (0);
->>>>>>> be5a7a207ab345b88fb7591b9aee006676b3b627
 }
