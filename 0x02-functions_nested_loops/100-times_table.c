@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
-*  print_times_table - check the code for Holberton School students.
+* print_times_table - check the code for Holberton School students.
 * @n:integer.
 * Return: Always.
 */
