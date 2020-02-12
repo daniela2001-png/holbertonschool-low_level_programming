@@ -1,29 +1,46 @@
 #include "holberton.h"
-#include <stdio.h>
-/**
- * times_table - check the code for Holberton School students.
- *
- * Return: Always 0.
- */
 
+/**
+* times_table - prints the sign of a number
+* @n, @b, @x, @y, @z: The character to print
+*/
 void times_table(void)
 {
-	int x, y, z = 0;
+	int a, b, x, y, z;
 
-			for (x = 0; x < 10; x++)
+	for (a = 0; a <= 9; a++)
+	{
+		for (b = 0; b <= 9; b++)
 		{
-
-				for (y = 0; y < 10; y++)
-				{
-					z = x * y;
-
-					if (z < 10)
-						printf("%i,  ", z);
-					else
-						printf("%i, ", z);
-					if (y == 9)
-						printf("%i", z);
-				}
-			printf("\n");
+			x = a * b;
+			y = x / 10;
+			z = x % 10;
+			if (b > 0)
+			{
+			if (x >= 10)
+			{
+			_putchar(' ');
+			_putchar(y + '0');
+			_putchar(z + '0');
+			}
+			else
+			{
+			_putchar(' ');
+			_putchar(' ');
+			_putchar(z + '0');
+			}
+			if (b != 9)
+			{
+				_putchar(',');
+			}
+			}
+			else
+			{
+				_putchar ('0' + z);
+				_putchar(',');
+			}
 		}
+		_putchar('\n');
+	}
 }
+
