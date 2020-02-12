@@ -6,8 +6,7 @@
  *Return: Always 0.
  */
   int add(int a, int b)
-    {
-  int suma = a + b;
-  
-  return (suma);
-    }
+        {
+      int suma = a + b;
+      return (suma);
+        }
