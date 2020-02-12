@@ -1,4 +1,5 @@
 #include "holberton.h"
+
 /**
  * add - check the code for Holberton School students.
  *@a: The character to print
