@@ -2,7 +2,7 @@
 /**
 * print_times_table - check the code for Holberton School students.
 * @n:integer.
-* Return: Always.
+*
 */
 void print_times_table(int n)
 {
