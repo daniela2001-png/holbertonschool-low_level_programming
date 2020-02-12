@@ -5,8 +5,10 @@
  * @b: The character to print
  *Return: Always 0.
  */
-  int add(int a, int b)
-        {
-      int suma = a + b;
-      return (suma);
-        }
+int add(int a, int b)
+{
+
+    int suma = a + b;
+
+    return (suma);
+ }
