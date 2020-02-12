@@ -1,13 +1,17 @@
 #include "holberton.h"
+
 /**
- * add - check the code for Holberton School students.
- * @a: The character to print
- * @b: The character to print
- *Return: Always 0.
- */
+* add - sum two integers
+* @a: The first character to print
+* @b: The second character to print
+* Return: the results
+*/
+
 int add(int a, int b)
 {
-        int suma;
-        suma = a + b;
-        return (suma);
+	int c;
+
+	c = a + b;
+
+	return (c);
 }
