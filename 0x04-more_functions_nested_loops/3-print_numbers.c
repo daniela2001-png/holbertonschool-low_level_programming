@@ -1,9 +1,7 @@
 #include "holberton.h"
 
 /**
- * print_numbers - check the code for Holberton School students.
- * @n: The character to print
- * Return: Always 0.
+ * print_numbers - checks for uppercase character
  */
 
 void print_numbers(void)
