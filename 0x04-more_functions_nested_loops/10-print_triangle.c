@@ -1,40 +1,32 @@
-
 #include "holberton.h"
+
 /**
- * print_diagonal - check the code for Holberton School students.
- * @n : n is int
- *  
- */
+  * print_triangle - draws a straight line
+  * @size: number of lines
+  */
 
-void print_diagonal(int n)
+void print_triangle(int size)
 {
-	int x;
-	int y;
+	int l, x;
 
-	
-	if (n > 0)
+	for (l = 1; l <= size; l++)
+	{
+		for (x = size; x >= 1; x--)
 		{
-			for (x = 1 ; x <= n ; x++)
-				{
-					for (y = 1 ; y <= n ; y++)
-						{
-							if (y < x)
-								{
-									
-									_putchar(92);
-								}
-							else
-								{
-									_putchar(' ');
-								}
-						}
-					_putchar('\n');
-				}
+			if (x <= l)
+			{
+			_putchar('#');
+			}
+			else
+			{
+				_putchar(' ');
+			}
 		}
-	else if (n <= 0)
+		_putchar('\n');
+	}
+		if (size <= 0)
 		{
-			_putchar('\n');
-
+		_putchar('\n');
 		}
 
 }
