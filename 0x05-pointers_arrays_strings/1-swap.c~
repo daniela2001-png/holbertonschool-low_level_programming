@@ -1,0 +1,18 @@
+/**
+ * swap_int - check the code for Holberton School students.
+ * @z : created a new variable for stored my two pointers
+ * @a : pointer
+ * @b : pointer
+ */
+
+void swap_int(int *a, int *b)
+{
+int z;
+
+z = *a;
+
+*a = *b;
+
+*b = z;
+
+}
