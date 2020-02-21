@@ -15,25 +15,26 @@ char *leet(char *s)
 	int i = 0;
 	int b;
 
-	while (s[i] != '\0')
-		{
+			while (s[i] != '\0')
+			{
 
-			for (b =0 ; b <= 9; b++)
+				for (b = 0 ; b <= 9; b++)
 				{
 					if (s[i] == letter[b])
-						{
-							s[i] = number[b];
-						}
+					{
+						s[i] = number[b];
+					}
 
 				}
 
 
 
 
+
 			i++;
-		}
+			}
 
 
-	return(s);
+	return (s);
 
 }
