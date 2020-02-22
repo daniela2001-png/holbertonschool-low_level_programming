@@ -1,14 +1,12 @@
 #include "holberton.h"
-
 /**
  * print_number - check the code for Holberton School students.
- * @n : integer
+ * @n: integer
  * Return: Always 0.
  */
 void print_number(int n)
 {
 	if (n < 0)
-
 	{
 		n = n * -1;
 		_putchar('-');
