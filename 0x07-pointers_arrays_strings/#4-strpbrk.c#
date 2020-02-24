@@ -1,0 +1,14 @@
+#include "holberton.h"
+/**
+ * *_strpbrk - check the code for Holberton School students.
+ * @s :
+ * @accept :
+ * Return: s
+ */
+
+char *_strpbrk(char *s, char *accept)
+{
+	int i = 0;
+	int j;
+
+	
