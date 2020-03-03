@@ -11,7 +11,7 @@
 	{
 
 	char *s;
-	int i;
+	int i, j;
 
 
 	if (str == NULL)
@@ -19,9 +19,12 @@
 	return (NULL);
 	}
 
+	for (i = 0; str[i] != '\0'; i++)
+	{
+	}
+	s = malloc(i * sizeof(char));
 
 
-	s = malloc(sizeof(str) + 1);
 
 	if (s == NULL)
 	{
@@ -29,9 +32,9 @@
 	}
 
 
-	for (i = 0; *(str + i); i++)
+	for (j = 0; j < i; j++)
 	{
-	*(s + i) = *(str + i);
+	*(s + j) = *(str + j);
 	}
 
 
