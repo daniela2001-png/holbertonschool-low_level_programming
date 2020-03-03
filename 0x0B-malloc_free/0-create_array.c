@@ -18,7 +18,7 @@
 	return (NULL);
 	}
 
-	s = malloc(size * sizeof(char) + 1);
+	s = malloc(size * sizeof(char));
 
 	for (i = 0; i < size; i++)
 	{
