@@ -19,7 +19,8 @@
 	}
 
 	s = malloc(size * sizeof(char));
-
+	if (s == NULL)
+	return (NULL);
 	for (i = 0; i < size; i++)
 	{
 
