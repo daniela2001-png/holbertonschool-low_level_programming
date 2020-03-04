@@ -1,6 +1,13 @@
 #include <stdlib.h>
 #include "holberton.h"
 
+/**
+ * alloc_grid - check the code for Holberton School students.
+ * @height :na
+ * @width: no
+ * Return: Always 0.
+ */
+
 int **alloc_grid(int width, int height)
 {
 
@@ -29,10 +36,10 @@ return (NULL);
 }
 }
 
-for (filas = 0; filas < height; filas++)
+for (filas = 0; p[filas]; filas++)
 {
-for (col = 0; col < width; col++)
+for (col = 0; p[filas][col]; col++)
 p[filas][col] = 0;
-}       
-return (p);   
+}
+return (p);
 }
