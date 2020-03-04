@@ -22,7 +22,10 @@ return (NULL);
 p = malloc(sizeof(int *) * height);
 
 if (p == NULL)
+{
+free(p);
 return (NULL);
+}
 
 for (filas = 0; filas < height; filas++)
 {
@@ -36,9 +39,9 @@ return (NULL);
 }
 }
 
-for (filas = 0; p[filas]; filas++)
+for (filas = 0; filas < height; filas++)
 {
-for (col = 0; p[filas][col]; col++)
+for (col = 0; col < width; col++)
 p[filas][col] = 0;
 }
 return (p);
