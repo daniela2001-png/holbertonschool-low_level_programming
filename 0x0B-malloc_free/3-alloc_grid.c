@@ -34,7 +34,7 @@ if (p[filas] == NULL)
 {
 for (x = 0; x < filas; x++)
 {
-free(p[filas]);
+free(p[x]);
 }
 free(p);
 return (NULL);
