@@ -59,11 +59,19 @@ dog_t *himydog;
 
 newname = _strdup(name);
 newowner = _strdup(owner);
-
+if (newname == NULL || newowner == NULL)
+{
+free(newname);
+free(newowner);
+return (NULL);
+}
 himydog = malloc(sizeof(dog_t));
 if (himydog == NULL)
+{
+free(newname);
+free(newowner);
 return (NULL);
-
+}
 himydog->name = newname;
 himydog->age = age;
 himydog->owner = newowner;
