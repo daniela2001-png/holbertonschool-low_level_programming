@@ -26,13 +26,13 @@ char *owner;
  *@owner : owner
  *Return: Always 0.
  */
-typedef struct dog_da 
+typedef struct dog_da
 {
 
 char *name;
 float age;
 char *owner;
-}dog_da;
+} dog_da;
 
 int _putchar(char c);
 void init_dog(struct dog *d, char *name, float age, char *owner);
