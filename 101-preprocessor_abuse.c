@@ -1,1 +1,1 @@
-#warning "Hello, Holberton"
+#warning "Hello, Holberton\n"
