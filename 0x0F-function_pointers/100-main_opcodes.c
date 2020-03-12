@@ -13,27 +13,15 @@ int main(int argc, char *argv[])
 	int i = 0;
 
 	unsigned char *c;
+
 	c = (unsigned char *)&main;
 
 	num1 = atoi(argv[1]);
 
-	for (; argv[1][i]; i++)
-	{
-		if (argv[1][i] >= 48 && argv[1][i] <= 57)
-
-			continue;
-
-		else
-			printf("Error\n");
-		exit(1);
-
-	}
-
-
-	if (num1 <= 0)
+	if (num1 < 0)
 	{
 		printf("Error\n");
-			exit(2);
+		exit(2);
 	}
 
 	if (argc != 2)
@@ -43,11 +31,10 @@ int main(int argc, char *argv[])
 	}
 
 
-	for (i = 0; i < num1; i++)
+	for (i = 0; i < num1 - 1; i++)
 	{
-
 		printf("%02hhx ", c[i]);
 	}
-	printf("\n");
+	printf("%02hhx\n", c[i]);
 	return (0);
 }
