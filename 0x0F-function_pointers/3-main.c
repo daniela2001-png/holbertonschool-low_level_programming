@@ -1,5 +1,7 @@
 #include <stdio.h>
-#include "calc.h"
+#include "3-calc.h"
+#include <string.h>
+#include <stdlib.h>
 
 /**
  * main - Struct op
@@ -20,15 +22,13 @@ int main(int argc, char *argv[])
 	num1 = atoi(argv[1]);
 	num2 = atoi(argv[3]);
 
-	operador = get_op_func(argv[2][0]);
-
-	if (!operador)
+	if (!get_op_func(argv[2]) || argv[2][1])
 	{
 		printf("Error\n");
 		exit(99);
 	}
 
-	if ((operador == '/' || operador == '%') && argv[3] == 0)
+	if (( *argv[2]== '/' || *argv[2] == '%') && argv[3] == 0)
 	{
 		printf("Error\n");
 		exit(100);
