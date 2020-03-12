@@ -18,15 +18,14 @@ int main(int argc, char *argv[])
 
 	if (num1 < 0)
 	{
-		exit(2);
-
-
+		printf("Error\n");
+			exit(2);
 	}
 
 	if (argc != 2)
 	{
+		printf("Error\n");
 		exit(1);
-
 	}
 
 
