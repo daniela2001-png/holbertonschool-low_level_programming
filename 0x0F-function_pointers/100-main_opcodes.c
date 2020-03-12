@@ -10,19 +10,12 @@
 int main(int argc, char *argv[])
 {
 	int num1;
-	int i = 0;
+	int i;
 
 	unsigned char *c;
 
-	c = (unsigned char *)main;
+	c = (unsigned char *) main;
 
-	num1 = atoi(argv[1]);
-
-	if (num1 < 0)
-	{
-		printf("Error\n");
-		exit(2);
-	}
 
 	if (argc != 2)
 	{
@@ -30,6 +23,12 @@ int main(int argc, char *argv[])
 		exit(1);
 	}
 
+	num1 = atoi(argv[1]);
+	if (num1 < 0)
+	{
+		printf("Error\n");
+		exit(2);
+	}
 
 	for (i = 0; i < num1 - 1; i++)
 	{
