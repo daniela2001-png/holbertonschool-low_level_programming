@@ -16,7 +16,20 @@ int main(int argc, char *argv[])
 
 	num1 = atoi(argv[1]);
 
-	if (num1 < 0)
+	for (; argv[1][i]; i++)
+	{
+		if (argv[1][i] >= 48 && argv[1][i] <= 57)
+
+			continue;
+
+		else
+			printf("Error\n");
+		exit(1);
+
+	}
+
+
+	if (num1 <= 0)
 	{
 		printf("Error\n");
 			exit(2);
@@ -29,7 +42,7 @@ int main(int argc, char *argv[])
 	}
 
 
-	for (; i < num1; i++)
+	for (i = 0; i < num1; i++)
 	{
 
 		printf("%02hhx ", c[i]);
