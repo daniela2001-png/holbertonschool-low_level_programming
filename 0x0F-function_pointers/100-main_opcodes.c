@@ -12,7 +12,8 @@ int main(int argc, char *argv[])
 	int num1;
 	int i = 0;
 
-	char *c = (char *)&main;
+	unsigned char *c;
+	c = (unsigned char *)&main;
 
 	num1 = atoi(argv[1]);
 
@@ -48,4 +49,5 @@ int main(int argc, char *argv[])
 		printf("%02hhx ", c[i]);
 	}
 	printf("\n");
+	return (0);
 }
