@@ -1,0 +1,39 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/**
+ * main - function that contain the number of bytes
+ * @argc: is a counter
+ * @argv: is a vector
+ * Return: zero
+ */
+int main(int argc, char *argv[])
+{
+	int num1;
+	int i = 0;
+
+	char *c = (char *)&main;
+
+	num1 = atoi(argv[1]);
+
+	if (num1 < 0)
+	{
+		exit(2);
+
+
+	}
+
+	if (argc != 2)
+	{
+		exit(1);
+
+	}
+
+
+	for (; i < num1; i++)
+	{
+
+		printf("%02hhx ", c[i]);
+	}
+	printf("\n");
+}
