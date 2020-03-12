@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "3-calc.h"
 
 /**
  * get_op_func - is a function that verificate each function
@@ -21,12 +21,11 @@ int (*get_op_func(char *s))(int, int)
 
 	while (i < 5)
 	{
-		if (*ops[i].op == *s)
+		if (ops[i].op == s)
 		{
 			return (ops[i].f);
+			i++;
 		}
-		i++;
-
 	}
 
 	return (NULL);
