@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
 
 	unsigned char *c;
 
-	c = (unsigned char *)&main;
+	c = (unsigned char *)main;
 
 	num1 = atoi(argv[1]);
 
