@@ -1,7 +1,6 @@
-VARIADIC FUNCTIONS
+**VARIADIC FUNCTIONS**
 
 ============================================
-
 
 
 <img src ="https://www.holbertonschool.com/holberton-logo.png"/>
@@ -13,6 +12,6 @@ VARIADIC FUNCTIONS
 
 
 
-DESCRIPTION:
+**DESCRIPTION:**
 
-In this project I solved and fixed differents exercises of topic **(0x10-variadic_fucntions)**
+In this project I solved and fixed differents exercises of topic (0x10-variadic_functions)
