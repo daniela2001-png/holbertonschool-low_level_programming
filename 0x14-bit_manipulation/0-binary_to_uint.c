@@ -11,7 +11,7 @@ unsigned int binary_to_uint(const char *b)
 
 	int i = 0;
 	int longitud = 0;
-	unsigned long long decimal = 0;
+	unsigned long int decimal = 0;
 	int multiplicador = 1;
 
 
@@ -30,7 +30,7 @@ unsigned int binary_to_uint(const char *b)
 
 			if (b[i] == '1')
 			{
-				decimal += multiplicador;
+			decimal += multiplicador;
 			}
 			multiplicador = multiplicador * 2;
 
