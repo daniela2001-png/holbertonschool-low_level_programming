@@ -9,6 +9,7 @@ int create_file(const char *filename, char *text_content)
 {
 	int pf;
 	int i = 0;
+	int var;
 
 	if (!filename)
 		return (-1);
@@ -24,8 +25,10 @@ int create_file(const char *filename, char *text_content)
 			close(pf);
 			return (-1);
 		}
-		else
-			write(pf, text_content, i);
+
+		var = write(pf, text_content, i);
+		if (var == -1)
+			return (-1);
 
 		close(pf);
 		return (1);
