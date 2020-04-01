@@ -1,4 +1,3 @@
-
 #include "holberton.h"
 /**
  * main - entry to review
@@ -56,9 +55,7 @@ int main(int argc, char **argv)
  */
 void close_(int qfiles)
 {
-	int x;
-
-	x = close(qfiles);
+	close(qfiles);
 
 	if (qfiles == -1)
 	{
