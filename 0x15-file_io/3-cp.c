@@ -28,10 +28,10 @@ int main(int argc, char **argv)
 		dprintf(2, "Error: Can't write to %s\n", argv[2]);
 		exit(99);
 	}
-	while ((toread = read(file_from, buffer, 1024)) >= 1024)
+	while ((toread = read(file_from, buffer, 1024)) > 0)
 	{
 		towrite = write(file_to, buffer, toread);
-		if (towrite == -1)
+		if (towrite != toread)
 		{
 			dprintf(2, "Error: Can't write to %s\n", argv[2]);
 			exit(99);
