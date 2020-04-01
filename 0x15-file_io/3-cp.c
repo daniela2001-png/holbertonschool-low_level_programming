@@ -37,16 +37,17 @@ int main(int argc, char **argv)
 			exit(99);
 		}
 
+	}
 
-		if (toread == -1)
+
+	if (toread == -1)
 		{
 			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 			exit(98);
 		}
-	}
-	close_(file_to);
-	close_(file_from);
-	return (0);
+		close_(file_to);
+		close_(file_from);
+		return (0);
 }
 /**
  * close_ - close in case of error
