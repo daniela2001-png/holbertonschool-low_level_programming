@@ -6,12 +6,15 @@
  */
 int sum_dlistint(dlistint_t *head)
 {
+	dlistint_t *aux;
 	int suma = 0;
 
-	while (head != NULL)
+	aux = head;
+
+	while (aux != NULL)
 	{
-		suma += head->n;
-		head = head->next;
+		suma += aux->n;
+		aux = aux->next;
 	}
 	return (suma);
 }
