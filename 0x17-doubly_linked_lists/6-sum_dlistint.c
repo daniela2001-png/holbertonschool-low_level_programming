@@ -9,6 +9,9 @@ int sum_dlistint(dlistint_t *head)
 	dlistint_t *aux;
 	int suma = 0;
 
+	while (head->prev == NULL)
+		head = head->next;
+
 	if (head == NULL)
 		return (0);
 
