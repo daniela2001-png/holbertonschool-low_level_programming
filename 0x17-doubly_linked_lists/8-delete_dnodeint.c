@@ -16,23 +16,19 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 	if (index == 0)
 	{
 		*head = temp->next;
-		if (temp->next == NULL)
-		{
+		if (temp->next != NULL)
+		{/*Here prev is equal to null */
 			temp->next->prev = NULL;
 		}
 		free(temp);
 		return (1);
 	}
-
-	i = 0;
-
-	while (i < index)
+	for (i = 0; i < index; i++)
 	{
 		if (temp->next == NULL)
 			return (-1);
 /* here head to the next node where the index is for change */
 		temp = temp->next;
-		i++; /*run between of each node*/
 	}
 	temp->prev->next = temp->next;/* change the links between of nodes*/
 	if (temp->next != NULL)
