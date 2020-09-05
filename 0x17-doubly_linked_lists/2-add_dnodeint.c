@@ -23,7 +23,8 @@ dlistint_t *Create_node(const int n)
 
 /**
  * add_dnodeint - function that return a node if was insert sucess!
- * @h:pointer type struct to list
+ * @n:node to add
+ * @head:head of a list
  * Return: the node if was sucess or null if failed
  */
 
