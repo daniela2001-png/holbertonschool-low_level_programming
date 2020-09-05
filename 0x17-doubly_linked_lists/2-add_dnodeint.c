@@ -10,7 +10,7 @@ dlistint_t *Create_node(const int n)
 {
 	dlistint_t *nuevo = NULL;
 
-	nuevo = (dlistint_t *)malloc(sizeof(dlistint_t));
+	nuevo = malloc(sizeof(dlistint_t));
 
 	if (nuevo == NULL)
 	{
