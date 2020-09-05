@@ -11,6 +11,11 @@ dlistint_t *Create_node(const int n)
 	dlistint_t *nuevo = NULL;
 
 	nuevo = (dlistint_t *)malloc(sizeof(dlistint_t));
+	if (nuevo == NULL)
+	{
+		free(nuevo);
+		return (NULL);
+	}
 	if (nuevo != NULL)
 	{
 		nuevo->n = n;
