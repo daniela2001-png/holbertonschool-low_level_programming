@@ -12,10 +12,8 @@ dlistint_t *Create_node(const int n)
 
 	nuevo = (dlistint_t *)malloc(sizeof(dlistint_t));
 	if (nuevo == NULL)
-	{
-		free(nuevo);
 		return (NULL);
-	}
+
 	if (nuevo != NULL)
 	{
 		nuevo->n = n;
@@ -34,9 +32,10 @@ dlistint_t *Create_node(const int n)
 
 dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 {
-	dlistint_t *aux = *head;
+	dlistint_t *aux = NULL;
 	dlistint_t *nuevo_node = NULL;
 
+	aux = *head;
 	nuevo_node = Create_node(n);
 
 	if (*head == NULL)
