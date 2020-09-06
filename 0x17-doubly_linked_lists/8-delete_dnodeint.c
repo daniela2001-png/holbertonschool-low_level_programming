@@ -10,6 +10,7 @@
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
 	dlistint_t *ptr = *head;
+	dlistint_t *next = NULL;
 
 	if (head == NULL || *head == NULL)
 		return (-1);
@@ -29,7 +30,7 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 		return (-1);
 	/* Node temp->next is the node to be deleted */
 	/* Store pointer to the next of node to be deleted*/
-	dlistint_t *next = ptr->next->next;
+	next = ptr->next->next;
 
 	/* Unlink the node from linked list*/
 	free(ptr->next);
