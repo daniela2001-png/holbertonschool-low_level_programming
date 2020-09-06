@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * Create_node - function that create a node
+ * get_dnodeint_at_index - function that return the node in teh index position
  * @index:index to return
  * @head:head of a list
  * Return: the node index or null
@@ -23,5 +23,5 @@ dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 		ptr = ptr->next;
 		x++;
 	}
-	return (NULL);
+	return (0);
 }
