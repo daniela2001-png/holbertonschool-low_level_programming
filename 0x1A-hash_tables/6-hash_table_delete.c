@@ -1,9 +1,11 @@
 #include "hash_tables.h"
+
 /**
-* hash_table_delete - function thta frees a hash table
-* @ht:hash table to deleted
-* Return:void
-*/
+ * hash_table_delete - free all
+ * @ht: to free
+ * Return: void
+ */
+
 void hash_table_delete(hash_table_t *ht)
 {
 	unsigned long int i;
@@ -26,4 +28,5 @@ void hash_table_delete(hash_table_t *ht)
 	ht->array = NULL;
 	ht->size = 0;
 	free(ht);
+
 }
