@@ -22,8 +22,8 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 		my_ptr = ht->array[index];
 		while (my_ptr != NULL)
 		{
-			if (strcmp(ht->array[index]->key, key) == 0)
-				return (ht->array[index]->value);
+			if (strcmp(my_ptr->key, key) == 0)
+				return (my_ptr->value);
 		}
 	}
 	return (NULL);
