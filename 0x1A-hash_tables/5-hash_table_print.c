@@ -12,6 +12,9 @@ void hash_table_print(const hash_table_t *ht)
 	unsigned long int idx = 0;
 	char *final = "";
 
+	if (ht == NULL || ht->array == NULL)
+		return;
+
 	printf("{");
 	for (idx = 0; idx < ht->size; idx++)
 	{
