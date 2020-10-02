@@ -13,7 +13,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	unsigned long int index;
 	hash_node_t *nodo = NULL;
 
-	if (!key)
+	if (!key || !ht)
 		return (0);
 
 	index = key_index((const unsigned char *)key, ht->size);
@@ -34,7 +34,6 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		return (0);
 	nodo->key = strdup(key);
 	nodo->value = strdup(value);
-	
 	if (!nodo->key || !nodo->value)
 	{
 		free(nodo->value);
