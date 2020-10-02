@@ -9,6 +9,7 @@
 
 char *hash_table_get(const hash_table_t *ht, const char *key)
 {
+	hash_node_t *my_ptr = NULL;
 	unsigned long int index;
 
 	if (ht == NULL || key == NULL || ht->array == NULL ||
@@ -18,9 +19,12 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 	index = key_index((const unsigned char *)key, ht->size);
 	if (ht->array[index])
 	{
-		if (strcmp(ht->array[index]->key, key) == 0)
-			return (ht->array[index]->value);
+		my_ptr = ht->array[index];
+		while (my_ptr != NULL)
+		{
+			if (strcmp(ht->array[index]->key, key) == 0)
+				return (ht->array[index]->value);
+		}
 	}
 	return (NULL);
-
 }
