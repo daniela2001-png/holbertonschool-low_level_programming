@@ -1,7 +1,0 @@
-#Using variables to .c and compiler
-
-CC = gcc
-SRC = main.c holberton.c
-
-all:
-	$(CC) $(SRC) -o holberton
