@@ -1,3 +1,0 @@
-# My first Makefile to executable "holberton"
-all:
-	gcc main.c holberton.c -o holberton
