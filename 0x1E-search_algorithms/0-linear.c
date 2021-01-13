@@ -6,14 +6,14 @@
  * @size: the size of the array to over
  * @value: the element to search
  * Return: a integer that is the index of the value found inside of a array!
- **/
+ */
 
 int linear_search(int *array, size_t size, int value)
 {
 
 	int i = 0;
 
-	if (array == NULL)
+	if (array == NULL || size == 0)
 		return (-1);
 	while ((size_t)i < size)
 	{
